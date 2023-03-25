@@ -2,14 +2,16 @@
 
 namespace src\Controllers;
 
-class TemplateController{
+use src\Controllers\Controller;
+
+class TemplateController extends Controller{
 
     public function __construct(){
-        
+        parent::__construct();
     }
 
     public function home(){
-        echo "Hola mundo template";
+        echo $this->blade->run("template", array("variable1" => "value1"));
     }
 
 }
