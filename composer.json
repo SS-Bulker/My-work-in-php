@@ -1,0 +1,21 @@
+{
+    "name": "juanrincon/my-work-in-php",
+    "description": "Mi forma de trabajar con php",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Juanrincon\\MyWorkInPhp\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Juan Rincon",
+            "email": "jcami2002@gmail.com"
+        }
+    ],
+    "require": {
+        "psr/log": "^3.0",
+        "nesbot/carbon": "^2.66",
+        "illuminate/database": "^10.4"
+    }
+}
