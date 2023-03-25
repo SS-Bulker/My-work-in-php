@@ -8,6 +8,7 @@
 </head>
 <body>
     <h1>Hola Mundo</h1>
-    
+    @yield('content')
+
 </body>
 </html>

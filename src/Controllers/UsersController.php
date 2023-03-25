@@ -2,14 +2,16 @@
 
 namespace src\Controllers;
 
-class UsersController {
+use src\Controllers\Controller;
+
+class UsersController extends Controller{
     
     public function __construct(){
-        
+        parent::__construct();
     }
 
     public function home(){
-        echo "hola mundo usuarios";
+        echo $this->blade->run("users", array("variable1" => "value1"));
     }
 
 }
